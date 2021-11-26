@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&family=Zen+Kaku+Gothic+Antique&display=swap');
+
+/*main css rules*/
+body {
+    background-color: #FAF3EE;
+}
+
+h1, h2 {
+    font-family: 'Satisfy', cursive;
+    font-size: 4em;
+}
+
+
+p {
+    font-family: 'Zen Kaku Gothic Antique';
+}
+
+a {
+    font-family: 'Satisfy', cursive;
+    font-size: 1.6em;
+}
+
+.bg-dark {
+    --bs-bg-opacity: 1;
+    background-color:rgba(var(--bs-pink),var(--bs-bg-opacity))!important;
+}
+
+
+.bg-light {
+    background-image: url("../images/pink-unsplash.jpg");
+}
+
+figure {
+    padding: 0;
+    margin: 0;
+    display: block;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    max-height: 32rem;
+    border-radius: 10%;
+}
+
+/*.img-fluid {
+    height: 300px;
+    width: 100%;
+}*/
+
+.img-thumbnail {
+    background-color: #FAF3EE;
+}
+
+/*topnav css rules*/
+.site-header {
+    background-color: #FAF3EE;
+ 
+}
+
+.navbar-dark .navbar-toggler {
+    display: none;
+}
+
+.navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+    background-image: url(../images/weddingbanner2.jpg);
+    height: 20em;
+    background-repeat: no-repeat;
+    background-position-x: center;
+   
+    
+}
+
+/*sidebar css rules*/
+.sidebar {
+    opacity: 60%;
+    background-color: #FAF3EE;
+    padding: 22em 0 0;
+    width:20em;
+}
+
+.sidebar .nav-link.active {
+    color: black;
+    font-family: 'Zen Kaku Gothic Antique';
+}
+
+.sidebar .nav-item {
+    color: black;
+}
+
+
+
+/*form rules*/
+
+.formpicture {
+    box-sizing: border-box;
+    background-image: url(../images/pink-unsplash.jpg);
+    padding: 1em;
+    padding-left: 25em;
+
+}
+.form-control {
+    width: 50%;
+}
+
+/*#contactheader {
+    font-family: 'Satisfy', cursive;
+    font-size: 3em;
+    color: grey
+    
+    
+}
+#contactheader2 {
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    
+}
+#contact {
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    
+    
+}
+button {
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    display: block;
+}
+
+input[type="submit"] {
+   display: block;
+}
+.formpicture {
+    box-sizing: border-box;
+    background-image: url(../images/pink-unsplash.jpg);
+    padding: 1em;
+    padding-left: 25em;
+
+}
+label {
+   display:block;
+}
+input[type=text] {
+   
+}
+element.style {
+    display: block;
+}
+textarea {
+    width: 50%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+  }*/
+
+  /*footer rules*/
+footer {
+    text-align: center;
+    color: white;
+    
+    }
+
+footer ul li {
+    display: inline-block;
+    padding: 2em;
+    
+}
+
+.icons {
+   opacity: 90%;
+}
+
+
+@media only screen and (max-width: 767px) {
+    .formpicture {
+        padding-left: 1em;
+    }
+
+    .form-control {
+        width: 100%;
+    }
+
+    .navbar-dark .navbar-nav .nav-link {
+        color: black;
+    }
+
+    .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link {
+        color: pink;
+    }
+    li.nav-item {
+        color: black;
+    }
+
+    .navbar-dark .navbar-toggler {
+        display: inline-block;
+    }
+
+    .smaller {
+        max-width: 50%;
+        
+    }
+    
+}
+
+@media only screen and (max-width: 513px) {
+
+    .icons {
+        opacity: 90%;
+        display: flex;
+     }
+     
+     .icons >* {
+         flex-wrap: nowrap;
+    }
+
+    .smaller {
+        max-width: 80%;
+}
