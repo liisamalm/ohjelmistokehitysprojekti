@@ -22,6 +22,13 @@ a {
     font-size: 1.6em;
 }
 
+.bannerkuva {
+    width: 100%;
+    width: 100vw;
+    height: auto;
+    margin: -1rem;
+  }
+
 .bg-dark {
     --bs-bg-opacity: 1;
     background-color:rgba(var(--bs-pink),var(--bs-bg-opacity))!important;
@@ -29,7 +36,8 @@ a {
 
 
 .bg-light {
-    background-image: url("../images/pink-unsplash.jpg");
+    background-image: url("../images/pink-unsplash.jpg"); 
+    background-color: #FAF3EE;
 }
 
 figure {
@@ -75,12 +83,12 @@ figure {
     
 }
 
-/*sidebar css rules*/
+/*sidebar css rules
 .sidebar {
     opacity: 60%;
     background-color: #FAF3EE;
     padding: 22em 0 0;
-    width:20em;
+    width:12em;
 }
 
 .sidebar .nav-link.active {
@@ -90,9 +98,67 @@ figure {
 
 .sidebar .nav-item {
     color: black;
-}
+}*/
 
-
+.sidebar {
+    height: 100%;
+    width: 75px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:#FAF3EE;
+    transition: 0.5s;
+    overflow-x: hidden;
+    padding-top: 60px;
+    white-space: nowrap;
+  }
+  
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+  }
+  
+  .sidebar a:hover {
+    color: black;
+  }
+  
+  main .sidebar {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  .material-icons,
+  .icon-text {
+    vertical-align: middle;
+    display:inline-block;
+  }
+  
+  .material-icons {
+    padding-bottom: 3px;
+    margin-right: 30px;
+  }
+  
+  #main {
+    padding: 16px;
+    margin-left: 85px;
+    transition: margin-left 0.5s;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidebar {
+      padding-top: 15px;
+    }
+    .sidebar a {
+      font-size: 18px;
+    }
+  }
 
 /*form rules*/
 
@@ -100,7 +166,7 @@ figure {
     box-sizing: border-box;
     background-image: url(../images/pink-unsplash.jpg);
     padding: 1em;
-    padding-left: 25em;
+
 
 }
 .form-control {
@@ -221,4 +287,19 @@ footer ul li {
 
     .smaller {
         max-width: 80%;
+    }    
 }
+
+/*Mobile näkymän CSS -säännöt*/
+@media only screen and (max-width: 425px){
+    .icon-text {
+        display: none;
+      }
+    .sidebar {
+    
+    }
+
+}
+
+/*Laptop ja sitä suurempien näkymien CSS säännöt*/
+@media only screen and (min-width: 769px) {}
