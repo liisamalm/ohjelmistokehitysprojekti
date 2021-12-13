@@ -16,4 +16,14 @@ function toggleSidebar() {
   }
 }
 
+function ilmoittauduEsittelyyn(){
+  document.getElementById("myForm").style.display = "block";
+}
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+  alert("Varaus tehty onnistuneesti! Saat ilmoittautumisestasi vielä sähköpostia!");
+}
+
+/*Form */
+
 

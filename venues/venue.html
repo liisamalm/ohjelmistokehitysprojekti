@@ -14,16 +14,16 @@
 
 
 <!--Sidebar navigation -->
-
+<section id="main_container">
 <div id="mySidebar" class="sidebar" onmouseover="toggleSidebar()" onmouseout="toggleSidebar()">
 
-    <a href="#"><span><img class="minilogo" src="./images/diamond-ring-3725.svg" alt=""></span></a><br>
-    <a href="#"><span><i class="material-icons">info</i><span class="icon-text"> About</span></a><br>
+    <a href="../index.html"><span><img class="minilogo" src="./images/diamond-ring-3725.svg" alt=""></span></a><br>
+    <a href="../index.html"><span><i class="material-icons">info</i><span class="icon-text"> About</span></a><br>
     <a href="#"><i class="material-icons">festival</i><span class="icon-text"></span> Venues</a></span>
     </a><br>
     <a href="#"><i class="material-icons">local_dining</i><span class="icon-text"></span> Catering</span></a><br>
     <a href="#"><i class="material-icons">nightlife</i><span class="icon-text"></span> Entertainment</span></a><br>
-    <a href="#"><i class="material-icons">email</i><span class="icon-text"></span> Contact<span></a>
+    <a href="../index.html#contactlink"><i class="material-icons">email</i><span class="icon-text"></span> Contact<span></a>
   </div>
   
   <!--Main content starts-->
@@ -79,9 +79,58 @@
             <li>Hinnat vuosina 2020–2021: kesä pe–la 1200 € / talvi ja muut päivät 850 €. Varausmaksun osuus 200€.</li>
             <li>Tilat: holvattu sali, 2 kabinettia, lämmityskeittiö, wc-tilat, asiakasvarasto</li>
         </ul>
-        <div class="button">
-          <a href="something" class="button1">Ilmoittaudu esittelyyn!</a>
+        <div class="button" onclick="ilmoittauduEsittelyyn()">
+          <a class="button1">Ilmoittaudu esittelyyn!</a>
       </div>
+
+      <!--<button class="button" onclick="ilmoittauduEsittelyyn()">Ilmoittaudu esittelyyn
+      </button>-->
+    
+      <div class="form-popup" id="myForm">
+          <form action="#" class="form-container">
+            <h1 class="ilmoittautuminen">Varaa aika esittelyyn</h1>
+
+            <div class="mb-3">
+              <label for="firstName" class="form-label">First Name</label>
+              <input type="text" class="form-control" name="firstName" id="firstName" placeholder="First name...">
+            </div>
+            <div class="mb-3">
+              <label for="lastName" class="form-label">Last Name</label>
+              <input type="text" class="form-control" name="lastName" id="lastName" placeholder="Last name...">
+
+              <div class="mb-3">
+                <label for="phone" class="form-label">Telephone</label>
+                <input type="text" class="form-control" name="phone" id="phone" placeholder=" +358 ********">
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email address</label>
+              <input type="text" class="form-control" name="email" id="email" placeholder="name@example.com">
+            </div>
+
+            <!--<label for="fname"><b>Etunimi</b></label>
+            <input type="text" placeholder="Lisää etunimi..." name="email" required>
+
+            <label for="lname"><b>Sukunimi</b></label>
+            <input type="text" placeholder="Lisää sukunimi..." name="email" required>
+        
+            <label for="email"><b>Sähköposti</b></label>
+            <input type="text" placeholder="Lisää sähköposti..." name="email" required>
+        
+            <label for="phone"><b>Puhelinnumero</b></label>
+            <input type="text" placeholder="Lisää puhelinnumero" name="phone" required>-->
+          
+            <form action="/action_page.php">
+              <label for="birthdaytime">Book from here:</label>
+              <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+              <input type="submit" onclick="closeForm()">
+
+              <!--<button type="submit" class="btn cancel" onclick="closeForm()">Varaa</button>
+            </form>-->
+            
+          </form>
+        </div>
+      
       
     </div>
     <div class="carousel-center" id="kappeli">
@@ -279,26 +328,29 @@
             <a href="something" class="button1">Ilmoittaudu esittelyyn!</a>
         </div>
     </div>
-
+    </section>
 <!--Footer-->
 <footer>
   <figure><img class="footerimg" src="./images/footerflower.png" alt=""></figure>
+  
   <div class="some">
     <h2>Follow us!</h2>
     <ul class="somelist"><a href="">
-      <li><img src="./images/faceicon.png" alt="face">
+      <li><img src="../images/icons/liisafaceicon.png" alt="face">
     </a></li>
-    <li><a href=""><img src="./images/instaicon.png" alt="insta"></a></li>
-    <li><a href=""><img src="./images/snapicon.png" alt="snap"></a></li>
-    <li><a href=""><img src="./images/twittericon.png" alt="twitter"></a></li></ul>
+    <li><a href=""><img src="../images/icons/liisainstaicon.png" alt="insta"></a></li>
+    <li><a href=""><img src="../images/icons/liisasnapicon.png" alt="snap"></a></li>
+    <li><a href=""><img src="../images/icons/liisatwittericon.png" alt="twitter"></a></li></ul>
     <p>© 2021 Wedding Planners  All Rights Reserved.</p>
   </div>
-  
+</section>  
 </footer>
 
   </div>
 
 
-  <script src="./js/skriptit.js"></script>
+
+
+  <script src="./js/venueskriptit.js"></script>
 </body>
 </html>
