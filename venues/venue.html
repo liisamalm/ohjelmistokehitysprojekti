@@ -44,6 +44,8 @@
 
 <!-- Carousells start -->
 
+
+  <!-- Kämp-->
     <div class="carousel-center" id="kamp">
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -81,11 +83,7 @@
         </ul>
         <div class="button" onclick="ilmoittauduEsittelyyn()">
           <a class="button1">Ilmoittaudu esittelyyn!</a>
-      </div>
-
-      <!--<button class="button" onclick="ilmoittauduEsittelyyn()">Ilmoittaudu esittelyyn
-      </button>-->
-    
+        </div>
       <div class="form-popup" id="myForm">
           <form action="#" class="form-container">
             <h1 class="ilmoittautuminen">Varaa aika esittelyyn</h1>
@@ -107,18 +105,6 @@
               <label for="email" class="form-label">Email address</label>
               <input type="text" class="form-control" name="email" id="email" placeholder="name@example.com">
             </div>
-
-            <!--<label for="fname"><b>Etunimi</b></label>
-            <input type="text" placeholder="Lisää etunimi..." name="email" required>
-
-            <label for="lname"><b>Sukunimi</b></label>
-            <input type="text" placeholder="Lisää sukunimi..." name="email" required>
-        
-            <label for="email"><b>Sähköposti</b></label>
-            <input type="text" placeholder="Lisää sähköposti..." name="email" required>
-        
-            <label for="phone"><b>Puhelinnumero</b></label>
-            <input type="text" placeholder="Lisää puhelinnumero" name="phone" required>-->
           
             <form action="/action_page.php">
               <label for="birthdaytime">Book from here:</label>
@@ -130,9 +116,10 @@
             
           </form>
         </div>
-      
-      
     </div>
+    </div>
+    
+  <!-- Kappeli -->    
     <div class="carousel-center" id="kappeli">
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -168,10 +155,46 @@
             <li>Hinnat vuosina 2020–2021: kesä pe–la 1150 € / talvi ja muut päivät 750 €. Varausmaksun osuus 400€.</li>
             <li>Tilat: 2 salia, 2 kabinettia, wc-tilat, keittiö, 3 baaria, 2 ulkoterassia</li>
         </ul>
-        <div class="button">
-            <a href="something" class="button1">Ilmoittaudu esittelyyn!</a>
-        </div>
+        <div class="button" onclick="ilmoittauduEsittelyyn()">
+          <a class="button1">Ilmoittaudu esittelyyn!</a>
+      </div>
+      <div class="form-popup" id="myForm">
+          <form action="#" class="form-container">
+            <h1 class="ilmoittautuminen">Varaa aika esittelyyn</h1>
+
+            <div class="mb-3">
+              <label for="firstName" class="form-label">First Name</label>
+              <input type="text" class="form-control" name="firstName" id="firstName" placeholder="First name...">
+            </div>
+            <div class="mb-3">
+              <label for="lastName" class="form-label">Last Name</label>
+              <input type="text" class="form-control" name="lastName" id="lastName" placeholder="Last name...">
+
+              <div class="mb-3">
+                <label for="phone" class="form-label">Telephone</label>
+                <input type="text" class="form-control" name="phone" id="phone" placeholder=" +358 ********">
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email address</label>
+              <input type="text" class="form-control" name="email" id="email" placeholder="name@example.com">
+            </div>
+
+          
+            <form action="/action_page.php">
+              <label for="birthdaytime">Book from here:</label>
+              <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+              <input type="submit" onclick="closeForm()">
+
+              <!--<button type="submit" class="btn cancel" onclick="closeForm()">Varaa</button>
+            </form>-->
+            
+          </form>
+      </div>
     </div>
+    </div>
+
+    <!-- Sipuli -->
     <div class="carousel-center" id="sipuli">
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -208,8 +231,42 @@
             <li>Tilat: Kaksi salia, 1 kabinetti, lämmityskeittiö, wc-tilat, 2 baaria, lasitettu terassi</li>
         </ul>
         <div class="button">
-            <a href="something" class="button1">Ilmoittaudu esittelyyn!</a>
+          <div class="button" onclick="ilmoittauduEsittelyyn()">
+            <a class="button1">Ilmoittaudu esittelyyn!</a>
         </div>
+
+        <div class="form-popup" id="myForm">
+            <form action="#" class="form-container">
+              <h1 class="ilmoittautuminen">Varaa aika esittelyyn</h1>
+  
+              <div class="mb-3">
+                <label for="firstName" class="form-label">First Name</label>
+                <input type="text" class="form-control" name="firstName" id="firstName" placeholder="First name...">
+              </div>
+              <div class="mb-3">
+                <label for="lastName" class="form-label">Last Name</label>
+                <input type="text" class="form-control" name="lastName" id="lastName" placeholder="Last name...">
+  
+                <div class="mb-3">
+                  <label for="phone" class="form-label">Telephone</label>
+                  <input type="text" class="form-control" name="phone" id="phone" placeholder=" +358 ********">
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="text" class="form-control" name="email" id="email" placeholder="name@example.com">
+              </div>
+            
+              <form action="/action_page.php">
+                <label for="birthdaytime">Book from here:</label>
+                <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+                <input type="submit" onclick="closeForm()">
+  
+                <!--<button type="submit" class="btn cancel" onclick="closeForm()">Varaa</button>
+              </form>-->
+              
+            </form>
+          </div>
     </div>
     <div class="carousel-center" id="suokki">
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -246,8 +303,42 @@
             <li>Hinnat vuosina 2020–2021: kesä pe–la 1300 € / talvi ja muut päivät 850 €. Varausmaksun osuus 200€.</li>
             <li>Tilat: holvattu sali, 2 kabinettia, lämmityskeittiö, wc-tilat, asiakasvarasto</li>
         </ul>
-        <div class="button">
-            <a href="something" class="button1">Ilmoittaudu esittelyyn!</a>
+        <div class="button" onclick="ilmoittauduEsittelyyn()">
+          <a class="button1">Ilmoittaudu esittelyyn!</a>
+      </div>
+
+      <div class="form-popup" id="myForm">
+          <form action="#" class="form-container">
+            <h1 class="ilmoittautuminen">Varaa aika esittelyyn</h1>
+
+            <div class="mb-3">
+              <label for="firstName" class="form-label">First Name</label>
+              <input type="text" class="form-control" name="firstName" id="firstName" placeholder="First name...">
+            </div>
+            <div class="mb-3">
+              <label for="lastName" class="form-label">Last Name</label>
+              <input type="text" class="form-control" name="lastName" id="lastName" placeholder="Last name...">
+
+              <div class="mb-3">
+                <label for="phone" class="form-label">Telephone</label>
+                <input type="text" class="form-control" name="phone" id="phone" placeholder=" +358 ********">
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email address</label>
+              <input type="text" class="form-control" name="email" id="email" placeholder="name@example.com">
+            </div>
+          
+            <form action="/action_page.php">
+              <label for="birthdaytime">Book from here:</label>
+              <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+              <input type="submit" onclick="closeForm()">
+
+              <!--<button type="submit" class="btn cancel" onclick="closeForm()">Varaa</button>
+            </form>-->
+            
+          </form>
+        </div>
         </div>
     </div>
     <div class="carousel-center" id="soutu">
@@ -285,8 +376,44 @@
             <li>Hinnat vuosina 2020–2021: kesä pe–la 1500 € / talvi ja muut päivät 750 €. Varausmaksun osuus 150€.</li>
             <li>Tilat: Kabinetti, keittiö, wc-tilat, terassi</li>
         </ul>
-        <div class="button">
-            <a href="something" class="button1">Ilmoittaudu esittelyyn!</a>
+        <div class="button" onclick="ilmoittauduEsittelyyn()">
+          <a class="button1">Ilmoittaudu esittelyyn!</a>
+      </div>
+
+      <!--<button class="button" onclick="ilmoittauduEsittelyyn()">Ilmoittaudu esittelyyn
+      </button>-->
+    
+      <div class="form-popup" id="myForm">
+          <form action="#" class="form-container">
+            <h1 class="ilmoittautuminen">Varaa aika esittelyyn</h1>
+
+            <div class="mb-3">
+              <label for="firstName" class="form-label">First Name</label>
+              <input type="text" class="form-control" name="firstName" id="firstName" placeholder="First name...">
+            </div>
+            <div class="mb-3">
+              <label for="lastName" class="form-label">Last Name</label>
+              <input type="text" class="form-control" name="lastName" id="lastName" placeholder="Last name...">
+
+              <div class="mb-3">
+                <label for="phone" class="form-label">Telephone</label>
+                <input type="text" class="form-control" name="phone" id="phone" placeholder=" +358 ********">
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email address</label>
+              <input type="text" class="form-control" name="email" id="email" placeholder="name@example.com">
+            </div>
+          
+            <form action="/action_page.php">
+              <label for="birthdaytime">Book from here:</label>
+              <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+              <input type="submit" onclick="closeForm()">
+
+              <!--<button type="submit" class="btn cancel" onclick="closeForm()">Varaa</button>
+            </form>-->
+            
+          </form>
         </div>
     </div>
     <div class="carousel-center" id="vene">

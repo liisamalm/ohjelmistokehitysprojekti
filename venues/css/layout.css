@@ -101,7 +101,7 @@ header {
   }
   
   .sidebar a:hover {
-    color: #f1f1f1;
+    color: purple;
   }
   
   main .sidebar {
@@ -134,7 +134,7 @@ header {
   }
   .form-popup {
     display: none;
-    /*position: fixed;*/
+    position: fixed;
     bottom: 0;
     right: 15px;
     border: 3px solid #f1f1f1;
