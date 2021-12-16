@@ -1,2 +1,15 @@
 /*GENERAL*/
+.sidebar {
+background-image: url(../../images/pink-unsplash.jpg);
+}
 
+@media only screen and (max-width: 767px) {
+    .smaller {
+      max-width: 60%; 
+    }
+
+    .icons li {
+        width: 15%;
+        padding-right: 0.5em;
+    }
+  }

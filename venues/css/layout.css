@@ -142,7 +142,7 @@ header {
   }
 
 .form-container {
-    background-image: url(../../images/eucalyptus.jpg);
+    background-image: url(/images/pink-unsplash.jpg);
     padding: 2em;
 }
 .form-container input[type=text] {
@@ -220,7 +220,7 @@ button {
 
 /* Footer */
 
-footer{
+/*footer{
     position: relative;
     text-align: center;
 }
@@ -252,4 +252,52 @@ footer{
   width: 100vw;
   height: auto;
   margin: -1rem;
+}*/
+
+footer {
+  text-align: center;
+  color: grey;
+  
+  }
+
+footer ul li {
+  display: inline-block;
+  padding-right: 0.5em;
+  /*padding: 2em;*/
+  
 }
+
+.icons {
+ opacity: 90%;
+}
+
+@media only screen and (max-width: 767px) {
+  .smaller {
+    max-width: 60%; 
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  footer ul li {
+    padding: 0;
+  }
+}
+  @media only screen and (max-width: 630px) {
+
+    .icons {
+        opacity: 90%;
+        /*display: flex;
+     }
+     
+     .icons >* {
+         flex-wrap: nowrap;
+    }*/
+   
+}
+
+}
+/*@media only screen and (max-width: 630px) {
+  .smaller {
+    max-width: 130%;
+  }    
+}*/

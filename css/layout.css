@@ -36,8 +36,9 @@ a {
 
 
 .bg-light {
-    background-image: url("../images/pink-unsplash.jpg"); 
-    background-color: #FAF3EE;
+    /*background-image: url("../images/pink-unsplash.jpg");*/
+    background-color: #FAF3EE!important;
+    
 }
 
 figure {
@@ -62,6 +63,10 @@ figure {
 
 .img-thumbnail {
     background-color: #FAF3EE;
+}
+
+.sidebar {
+    background-image: url(/images/pink-unsplash.jpg);
 }
 
 /*topnav css rules*/
@@ -169,11 +174,10 @@ footer {
 footer ul li {
     display: inline-block;
     padding: 2em;
-    
 }
 
 .icons {
-   opacity: 90%;
+   opacity: 80%;
 }
 
 
@@ -188,6 +192,12 @@ footer ul li {
 
     .navbar-dark .navbar-nav .nav-link {
         color: black;
+    }
+
+    footer ul li {
+        padding-top:1em;
+        padding-right: 0;
+        padding-left: 0;
     }
 
     .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link {
@@ -208,30 +218,27 @@ footer ul li {
     
 }
 
-@media only screen and (max-width: 513px) {
+@media only screen and (max-width: 630px) {
 
     .icons {
         opacity: 90%;
-        display: flex;
+       /* display: flex;
      }
      
      .icons >* {
          flex-wrap: nowrap;
+    }*/
     }
-
     .smaller {
-        max-width: 80%;
+        max-width: 60%;
     }    
 }
 
 /*Mobile näkymän CSS -säännöt*/
 @media only screen and (max-width: 425px){
     .icon-text {
-        display: none;
-      }
-    .sidebar {
-    
-    }
+        /*display: none;
+      }*/
 
 }
 
