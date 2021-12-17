@@ -231,6 +231,7 @@ footer ul li {
     }
     .smaller {
         max-width: 60%;
+        opacity: 90%;
     }    
 }
 
