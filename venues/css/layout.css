@@ -142,7 +142,7 @@ header {
   }
 
 .form-container {
-    background-image: url(/images/pink-unsplash.jpg);
+    background-image: url(../../images/pink-unsplash.jpg);
     padding: 2em;
 }
 .form-container input[type=text] {
